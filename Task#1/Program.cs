@@ -1,15 +1,15 @@
 ﻿//Задача 41: Пользователь вводит с клавиатуры M чисел. 
 //Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-int getMoreO( int[] arr )
+int getMoreO(int[] arr)
 {
     int res = 0;
-for (int i = 0; i < arr.Length; i++)
-{
-    if (arr[i]>0) res++;
-    
-}
- return res;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > 0) res++;
+
+    }
+    return res;
 }
 
 
@@ -19,8 +19,8 @@ int[] array = new int[col];
 
 for (int i = 0; i < col; i++)
 {
-    Console.WriteLine($"Введите {i+1}е чиселo:");
+    Console.WriteLine($"Введите {i + 1}е чиселo:");
     array[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine($"Сумма четных чисел = {getMoreO( array )}");
+Console.WriteLine($"Сумма четных чисел = {getMoreO(array)}");
