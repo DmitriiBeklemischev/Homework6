@@ -1,7 +1,7 @@
 ﻿//Задача 41: Пользователь вводит с клавиатуры M чисел. 
 //Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-int getBigO( int[] arr )
+int getMoreO( int[] arr )
 {
     int res = 0;
 for (int i = 0; i < arr.Length; i++)
@@ -23,4 +23,4 @@ for (int i = 0; i < col; i++)
     array[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine($"Сумма четных чисел = {getBigO( array )}");
+Console.WriteLine($"Сумма четных чисел = {getMoreO( array )}");
